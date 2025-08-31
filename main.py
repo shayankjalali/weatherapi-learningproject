@@ -1,5 +1,6 @@
 from dotenv import load_dotenv
 import sys
+import os
 import requests
 from PyQt5.QtWidgets import (QApplication, QWidget,  QLabel,
                              QLineEdit, QPushButton, QVBoxLayout)
@@ -182,6 +183,7 @@ if __name__ == '__main__':
     weather_app = WeatherApp()
     weather_app.show()
     sys.exit(app.exec_())
+
 
 
 
