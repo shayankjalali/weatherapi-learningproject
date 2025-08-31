@@ -1,9 +1,12 @@
+from dotenv import load_dotenv
 import sys
 import requests
 from PyQt5.QtWidgets import (QApplication, QWidget,  QLabel,
                              QLineEdit, QPushButton, QVBoxLayout)
 from PyQt5.QtCore import Qt
 from requests import RequestException
+
+load_dotenv()  # Load variables from .env file
 
 
 class WeatherApp(QWidget):
@@ -179,6 +182,7 @@ if __name__ == '__main__':
     weather_app = WeatherApp()
     weather_app.show()
     sys.exit(app.exec_())
+
 
 
 
